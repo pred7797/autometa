@@ -1,4 +1,5 @@
-import 'package:autom/pages/apiTest.dart';
+import 'package:autom/pages/qrscanner.dart';
+import 'package:autom/pages/text_input_page.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -12,8 +13,8 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedState = 2;
   static final List<Widget> _widgetOptions = <Widget>[
-    const Text("qr"),
-    const Crud(),
+    QRScanner(),
+    TextInputPage(),
     const Text("Account")
   ];
 
